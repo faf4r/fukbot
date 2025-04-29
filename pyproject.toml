@@ -1,0 +1,27 @@
+[project]
+name = "fukbot"
+version = "0.1.0"
+description = "A simple framework for building a official QQ bot based on botpy."
+authors = [
+    {name = "faf4r",email = "edgecage@foxmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "qq-botpy (>=1.2.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "fukbot", from = "src"}]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+flake8 = "^7.2.0"
+mypy = "^1.15.0"
+black = "^25.1.0"
+pre-commit = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

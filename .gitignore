@@ -1,0 +1,12 @@
+.vscode/
+.idea/
+
+__pycache__/
+*/__pycache__/
+
+logs/
+*/logs/*
+*.log
+*.log.*
+
+*/config.yaml
